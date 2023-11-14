@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud simples</title>
+</head>
+
+<body>
+
+
+    <form action="?act-save" method="POST" name="form1">
+
+
+        <h1>AGENDA DE PRODUTOS</h1>
+        <hr>
+        <input type="hidden" name="id" id="">
+        Nome:
+        <input type="text" name="nome">
+        E-mail:
+        <input type="text" name="email" id="email">
+        Celular:
+        <input type="text" name="celular" id="celular">
+        <input type="submit" name="btn" id="btn">
+        <input type="reset" value="reset">
+    </form>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Nome:</th>
+                <th>E-mail:</th>
+                <th>Celular:</th>
+                <th>Ações:</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <td>Nome:</td>
+                <td>E-mail:</td>
+                <td>Celular:</td>
+                <td>
+                    <a href="#">[Alterar]</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">[Excluir]</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
